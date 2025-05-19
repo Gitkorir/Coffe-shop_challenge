@@ -49,4 +49,13 @@ This project models a coffee shop using object-oriented programming (OOP) concep
 - An **Order** belongs to one **Customer** and one **Coffee**
 - This creates a **many-to-many relationship** between Customers and Coffees via Orders
 
----
+## how to run
+
+1. clone the repo
+   bash: git clone git@github.com:Gitkorir/Coffe-shop_challenge.git
+2. run the project
+   bash: python debug.py
+
+## Auther
+
+NAME: Arnold Kiprop Korir
