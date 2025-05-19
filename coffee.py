@@ -1,7 +1,7 @@
 class Coffee:
     shake =[]
     def __init__(self,name):
-        if isinstance(name,str ) and len(name >= 3):
+        if isinstance(name,str ) and len({name} >= 3):
 
          self._name = name
         else:
