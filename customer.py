@@ -23,3 +23,6 @@ class Customer:
     def coffee(self):
         #should returns a list of all coffee linked to the customer
         return list({order.coffee for order in self.Orders()})
+    
+    def total_spent(self):
+        return sum(order.price for order in self.orders())
