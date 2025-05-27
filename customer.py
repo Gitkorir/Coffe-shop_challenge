@@ -20,3 +20,6 @@ class Customer:
         # i want to return a list of the oders for this particular custommer
         from order import Order
         return [order for order in Order.all if order.customer == self]    
+    def coffee(self):
+        #should returns a list of all coffee linked to the customer
+        return list({order.coffee for order in self.Orders()})
