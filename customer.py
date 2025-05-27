@@ -16,4 +16,7 @@ class Customer:
             self._name = value # store this in the internal variable 
         else:
             raise ValueError("Name shoule between 1-15 characters long")    
-        
+    def orders(self):
+        # i want to return a list of the oders for this particular custommer
+        from order import Order
+        return [order for order in Order.all if order.customer == self]    
