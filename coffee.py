@@ -12,3 +12,9 @@ class Coffee:
     def name(self):
        return self._name  # getter def method   
 
+    def orders(self):
+       from order import Order
+       return [order for order in Order.all if order.coffee == self]
+    
+    def customers(self):
+       return list({order.customer for order in self.orders()})
